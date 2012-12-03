@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Speakker | The new way of audio</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="description" content="Audioplayer from a new generation">
+<link rel="Shortcut Icon" type="image/ico" href="img/speakker.ico">
+	
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	
+<!-- speakker relevant stuff starts here -->
+<link rel="stylesheet" href="css/queries/netbooks-tablets.css" type="text/css" media="screen and (max-width: 1007px)" />
+<link rel="stylesheet" href="css/speakker.css"  type="text/css" media="screen">
+<link rel="stylesheet" href="css/mspeakker.css" type="text/css" media="screen">
+								
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/projekktor.min.js"></script>
+<script type="text/javascript" src="speakker.min.js"></script>
+<!-- speakker relevant stuff ends here -->
+
+<!-- instantiate speakker (just a small one, one audiofile) -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.speakkerSmall').speakker({
+		file: 'sound/paniqaneducatedsimpleton.mp3',
+		poster: 'img/album-cover.png',
+		title: 'Paniq - An Educated Simpleton',
+		theme: 'light'
+	});
+});
+</script>
+
+</head>
+<body>
+	<div id="wrap">
+		
+		<div class="inside-plus">
+			<div id="logo">
+				<img src="img/speakker-dark.png" alt="speakker a projekktor projekkt">
+			</div>
+		</div>
+		
+		<div class="inside">
+			<h1>Thanks for downloading Speakker</h1>
+			<p>
+				This is just a small demo for instant testing. A more complex (playlist) setup can be seen at the <a href="http://www.speakker.com/demo/">project&acute;s homepage</a>.
+				To rebuild these demos on your page please follow take a peek into the source of this file or visit our tiny little <a href="http://www.projekktor.com/docs/speakker" target="_blank">Quick Install Guide</a>.
+				Have fun!
+			</p>
+		
+			<div class="separator">&nbsp;</div>
+			<div class="speakkerSmall"></div>
+			<div id="about">
+				<p class="left">speakker is a last.fm-resque audio player built upon the famous <a href="http://www.projekktor.com" title="projekktor website">projekktor video player</a>.
+				<p class="right">speakker repository at <a href="http://code.google.com/p/speakker/" title="Google Code repository">Google Code</a></p>
+				<p class="separator">&copy; 2011-2012 <a href="http://www.porkhead.org">Porkhead.org</a> &amp; <a href="http://www.spinningairwhale.com">Spinning Airwhale</a></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/noise.js"></script>
+</body>
+</html>
